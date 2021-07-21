@@ -122,8 +122,7 @@ lazy val chart = project
   .configure(baseSettings, bundlerSettings, browserProject)
   .settings(
     Compile / npmDependencies ++= Seq(
-      "@types/chart.js" -> "2.9.11",
-      "chart.js" -> "2.9.3"
+      "chart.js" -> "3.4.1"
     ),
     stUseScalaJsDom := false,
     useYarn := true,
